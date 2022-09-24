@@ -6,14 +6,27 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
 }
+body{
+    background-color: black;
+    /* background-image: url(/background.jpg); */
+    position: relative;
+}
+body img{
+    height: auto;
+    width: 30%;
+    position: absolute;
+    right: 10%;
+    top: 100%;
+    border-radius: 50px;
+}
 
-.background{
+/* .background{
+    background-color: black;
     height: 100vh;
-    background-image: url(/img/background.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
-}
+} */
 
 nav{
     display: flex;
@@ -69,8 +82,8 @@ nav ul li a:hover{
 
 .main{
     position: absolute;
-    top: 50%;
-    left: 8%;
+    top: 200%;
+    left: 15%;
     transform: translateY(-50);
 }
 
