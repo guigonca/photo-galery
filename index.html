@@ -11,31 +11,45 @@
     <link rel="stylesheet" href="estilo/stylee.css">
 </head>
 <body>
-    <img src="background.jpg" alt="">
-    <div class="background">
-        <nav>
-            <h2>Portfo<span>lio</span></h2>
-            <ul class="cabecalho-link">
-                <li><a href="#">inicio</a></li>
-                <li><a href="#">Sobre mim</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-            <a class ="btn" href="">Faça seu orçamento</a>
-        </nav>
-        <div class="main">
-            <!-- <h4>Olá, meu nome é </h4> -->
-            <h1>Daniel <span>Bazílio</span></h1>
-            <h3>Fotografia</h3>
-            <div class="container-btn">
-                <form>
-                    <input type="email" nome="email" id="email" placeholder="Envie seu e-mail">
-                    <input type="submit" nome="submit" value="Enviar">
-                </form>
-            </div>
-        </div>
-    </div>
+    <nav class="links">
+        <h2>Portfo<span>lio</span></h2>
+        <label for="rd_home">Home</label>
+        <label for="rd_sobre">Sobre mim</label>
+        <label for="rd_albuns">Albuns</label>
+        <label for="rd_contato">Contato</label>
+        <a class ="btn" href="">Faça seu orçamento</a>
+    </nav>        
+    <section class="scroll">
+        <input type="radio" name="group" id="rd_home" checked="true">
+        <input type="radio" name="group" id="rd_sobre">
+        <input type="radio" name="group" id="rd_albuns">
+        <input type="radio" name="group" id="rd_contato">    
+
+        <section class="sections">
+            <section class="bloco" id="home">
+                <div class="main">
+                    <h1>Daniel <span>Bazílio</span></h1>
+                    <h3>Fotografia</h3>
+                    <div class="container-btn">
+                        <form>
+                            <input type="email" nome="email" id="email" placeholder="Envie seu e-mail">
+                            <input id="btn-enviar" type="submit" nome="submit" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+                <img id="fotohome" src="background.jpg" alt="">
+            </section>
+            <section class="bloco" id="sobre">
+                <img id="fotosobre" src="img/fotofundo.jpg" alt="">
+            </section>
+            <section class="bloco" id="albuns">
+                <!-- <img src="img/main-img.png" alt=""> -->
+            </section>
+            <section class="bloco" id="contato">
+                <!-- <img src="img/fotofundo.jpg" alt=""> -->
+            </section>
+        </section>
+    </section>
 
     
     

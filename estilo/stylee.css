@@ -6,19 +6,22 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
 }
+:root{
+    --cor-letra-detaque: #f9004d;
+}
 body{
     background-color: black;
     /* background-image: url(/background.jpg); */
     position: relative;
 }
-body img{
+/* body img{
     height: auto;
     width: 30%;
     position: absolute;
     right: 10%;
     top: 100%;
     border-radius: 50px;
-}
+} */
 
 /* .background{
     background-color: black;
@@ -45,29 +48,29 @@ nav h2{
 }
 
 span{
-    color: #f9004d;
+    color: var(--cor-letra-detaque);
 }
 
-nav ul li{
+/* nav ul li{
     display: inline-block;
     padding: 10px 25px;
     list-style-type: none;
-}
+} */
 
-nav ul li a{
+/* nav ul li a{
     text-decoration: none;
     color: white;
     font-weight: bold;
     text-transform: capitalize;
-}
+} */
 
-nav ul li a:hover{
-    color:#f9004d;
+/* nav ul li a:hover{
+    color: var(--cor-letra-detaque);
     transition: 0.3s;
-}
+} */
 
 .btn{
-    background-color: #f9004d;
+    background-color: var(--cor-letra-detaque);
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -76,21 +79,19 @@ nav ul li a:hover{
     transition: 0.5s;
 }
 
+#btn-enviar{
+    position: relative;
+    left: 67%;
+}
+
 .btn:hover{
     transform: scale(1.1);
 }
 
 .main{
-    position: absolute;
-    top: 200%;
-    left: 15%;
-    transform: translateY(-50);
-}
-
-h4{
-    color: #fcfcfc;
-    letter-spacing: 2px;
-    font-size: 20px;
+    position: relative;
+    left: -7%;
+    /* transform: translateY(-100); */
 }
 
 h1{
@@ -107,13 +108,14 @@ h3{
 }
 
 .container-btn form{
-    width: 380px;
+    width: 85%;
     max-width: 100%;
     position: relative;
+    
 }
 
 .container-btn form input:first-child{
-    display: inlin-block;
+    display: inline-block;
     width: 100%;
     padding: 14px 130px 14px 15px;
     border-radius: 30px;
@@ -128,8 +130,91 @@ h3{
     border: none;
     border-radius: 30px;
     color: white;
-    background-color:#f9004d;    
+    background-color:var(--cor-letra-detaque);    
     box-shadow: 0 0 15px;
     right: 6px;
     top: 6px;
 }
+.links{
+    color: white;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+}
+
+.scroll{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.scroll input{
+    position: absolute;
+    display: none;
+    right: 20px;
+}
+
+.bloco{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.links label{
+    cursor: pointer;
+    flex-grow: 1;
+    transition: all .6s;
+    text-align: center;
+    font-size: 100%;
+    padding: 10px;
+}
+
+.sections{
+    transition: all .8s;
+}
+
+#rd_sobre:checked~.sections{
+    margin-top: -100vh;
+}
+
+#rd_albuns:checked~.sections{
+    margin-top: -200vh;
+}
+
+#rd_contato:checked~.sections{
+    margin-top: -300vh;
+}
+
+.links label:hover{
+    background-color: rgba(125, 125, 126, 0.158);
+}
+
+#sobre{
+    background-color: rgb(47, 53, 53);
+}
+
+#albuns{
+    background-color:rgba(38, 38, 201, 0.158)
+}
+
+#contato{
+    background-color: #f9004d;
+}
+
+#fotohome{
+    height: 75%;
+    width: auto;
+    border-radius: 15%;
+    background-size: cover;
+}
+
+#fotosobre{
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
