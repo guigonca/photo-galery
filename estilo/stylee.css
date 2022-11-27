@@ -8,28 +8,13 @@
 }
 :root{
     --cor-letra-detaque: #f9004d;
+    --cor-verde: #08a02e;
 }
+
 body{
-    background-color: black;
-    /* background-image: url(/background.jpg); */
+    background-color: rgb(26, 24, 24);
     position: relative;
 }
-/* body img{
-    height: auto;
-    width: 30%;
-    position: absolute;
-    right: 10%;
-    top: 100%;
-    border-radius: 50px;
-} */
-
-/* .background{
-    background-color: black;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-} */
 
 nav{
     display: flex;
@@ -49,34 +34,13 @@ nav h2{
 
 span{
     color: var(--cor-letra-detaque);
+    color: var(--cor-verde);
 }
 
-/* nav ul li{
-    display: inline-block;
-    padding: 10px 25px;
-    list-style-type: none;
-} */
-
-/* nav ul li a{
-    text-decoration: none;
+.subname{
     color: white;
-    font-weight: bold;
-    text-transform: capitalize;
-} */
-
-/* nav ul li a:hover{
-    color: var(--cor-letra-detaque);
-    transition: 0.3s;
-} */
-
-.btn{
-    background-color: var(--cor-letra-detaque);
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-weight: bolder;
-    border-radius: 5px;
-    transition: 0.5s;
+    font-size: 30px;
+    visibility: hidden;
 }
 
 #btn-enviar{
@@ -91,7 +55,6 @@ span{
 .main{
     position: relative;
     left: -7%;
-    /* transform: translateY(-100); */
 }
 
 h1{
@@ -99,6 +62,7 @@ h1{
     margin: 20px 0 20px;
     font-size: 75px;
 }
+
 
 h3{
     color: #fff;
@@ -136,13 +100,23 @@ h3{
     top: 6px;
 }
 .links{
-    color: white;
+    color: rgb(231, 231, 231);
+    background-color: rgb(0, 0, 0);
+    height: 10px;
     width: 100%;
-    height: 50px;
     position: fixed;
     display: flex;
 }
 
+.links label{
+    cursor: pointer;
+    flex-grow: 1;
+    transition: all .6s;
+    text-align: center;
+    font-size: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
 .scroll{
     display: flex;
     width: 100vw;
@@ -164,14 +138,7 @@ h3{
     justify-content: center;
 
 }
-.links label{
-    cursor: pointer;
-    flex-grow: 1;
-    transition: all .6s;
-    text-align: center;
-    font-size: 100%;
-    padding: 10px;
-}
+
 
 .sections{
     transition: all .8s;
@@ -181,7 +148,7 @@ h3{
     margin-top: -100vh;
 }
 
-#rd_albuns:checked~.sections{
+#rd_projeto:checked~.sections{
     margin-top: -200vh;
 }
 
@@ -190,14 +157,42 @@ h3{
 }
 
 .links label:hover{
-    background-color: rgba(125, 125, 126, 0.158);
+    background-color: rgba(252, 249, 249, 0.349);
 }
 
 #sobre{
-    background-color: rgb(47, 53, 53);
+    background-color: rgba(95, 93, 93, 0.918);
+    
+}
+/* #tudosobremim{
+    position: absolute;
+    width: 50%;
+} */
+
+#tituloSobremim{
+    position:absolute;
+    left: 10%;
+    top: 10px;
+    
+}
+#sobremim{
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: rgb(228, 225, 225);
+    /* position: relative;
+    left: 10%; */
+    width: 55%;
+    height: 55%;
+    padding: 15px;
+    border-radius: 5%;
+}
+#programadorfoto{
+    float: right;
+    width: 20%;
+    height: 20%;
 }
 
-#albuns{
+#projeto{
     background-color:rgba(38, 38, 201, 0.158)
 }
 
@@ -210,6 +205,7 @@ h3{
     width: auto;
     border-radius: 15%;
     background-size: cover;
+    visibility: hidden;
 }
 
 #fotosobre{
@@ -217,4 +213,9 @@ h3{
     height: 100vh;
     width: 100vw;
 }
+
+.meunome{
+   visibility: hidden;
+}
+
 

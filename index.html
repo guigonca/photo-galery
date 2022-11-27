@@ -7,51 +7,84 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;1,100&display=swap" rel="stylesheet">
-    <title>Daniel Bazílio Fotografia</title>
+    <link rel="shortcut icon" href="img/do-utilizador.svg" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="estilo/stylee.css">
+    <title>Portfólio Guilherme</title>
 </head>
 <body>
     <nav class="links">
-        <h2>Portfo<span>lio</span></h2>
-        <label for="rd_home">Home</label>
+        <h2>Portfó<span>lio</span></h2>
+        <label for="rd_home">Início</label>
         <label for="rd_sobre">Sobre mim</label>
-        <label for="rd_albuns">Albuns</label>
-        <label for="rd_contato">Contato</label>
-        <a class ="btn" href="">Faça seu orçamento</a>
-    </nav>        
+        <label for="rd_projeto">Projetos</label>
+        <label for="rd_contato">Contatos</label>
+    </nav>     
+
     <section class="scroll">
         <input type="radio" name="group" id="rd_home" checked="true">
         <input type="radio" name="group" id="rd_sobre">
-        <input type="radio" name="group" id="rd_albuns">
+        <input type="radio" name="group" id="rd_projeto">
         <input type="radio" name="group" id="rd_contato">    
 
         <section class="sections">
             <section class="bloco" id="home">
+
                 <div class="main">
-                    <h1>Daniel <span>Bazílio</span></h1>
-                    <h3>Fotografia</h3>
-                    <div class="container-btn">
-                        <form>
-                            <input type="email" nome="email" id="email" placeholder="Envie seu e-mail">
-                            <input id="btn-enviar" type="submit" nome="submit" value="Enviar">
-                        </form>
-                    </div>
+                    <hr size="1" width="100%">
+                    <h1 class="meunome">Guilherme <span class="meunome">Gonçalves</span></h1>
+                    <p class="subname">Desenvolvedor Júnior</p>                    
+                    <hr size="1" width="50%">
                 </div>
-                <img id="fotohome" src="background.jpg" alt="">
+
+                <img id="fotohome" src="img/guilhermeimg.jpg" alt="Foto Guilherme">
             </section>
+
+
+
+
             <section class="bloco" id="sobre">
-                <img id="fotosobre" src="img/fotofundo.jpg" alt="">
+                
+                <h2 id="tituloSobremim">Sobre mim</h2>
+                <div id="sobremim">
+                    <br>
+                    <p>Olá! Me chamo Guilherme Gonçalves, tenho 27 anos e sou estudante de Programação Web.</p><br>
+                    <p>Formado em Processos Gerenciais pelo Centro Universitário Celso Lisboa e no processo de transição de carreira para a área de tecnologia.</p><br>
+                    <p>Sempre tive gosto pela área de informática, novas tecnologias do momento e criação de algo útil que possa ajudar a vida de alguém.
+                        Por esse motivo comecei os estudos nos conteúdos relacionados a criação Web em casa e, após gostar desse universo, ingressei em um curso presencial de Programação Web no Senac-Rj.</p><br>
+                    <p>Atualmente estou desenvolvendo habilidades na área de tecnologia através de cursos online como, curso em vídeo, conteúdos da alura e no próprio curso do Senac que aborda as tecnologias: HTML, CSS, JavasScript, Bootstrap, PHP, git, github e banco de dados MySQL.</p><br>
+                    <p>Tenho a missão de me desenvolver plenamente no ramo da tecnologia me tornando um profissional altamente competente e, por conta disso, estou sempre à procura de aprender coisas novas.
+                        Possuo um perfil muito comunicativo, analítico, interessado em novos desafios, curioso, determinado e com controle emocional. </p><br>
+                </div>
+                
+                <!-- <figure>
+                    <img id="programadorfoto" src="img/programing.jpg" alt="foto programador">
+                </figure> -->
             </section>
-            <section class="bloco" id="albuns">
-                <!-- <img src="img/main-img.png" alt=""> -->
+
+
+
+
+
+
+            <section class="bloco" id="projeto">
+                <img src="#" alt="">
             </section>
+
+
+
+
+
+
+            
             <section class="bloco" id="contato">
-                <!-- <img src="img/fotofundo.jpg" alt=""> -->
+                <img src="#" alt="">
             </section>
         </section>
     </section>
 
-    
+    <script src="script.js"></script>
     
 </body>
 </html>
