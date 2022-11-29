@@ -6,13 +6,14 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
 }
+
 :root{
     --cor-letra-detaque: #f9004d;
     --cor-verde: #08a02e;
 }
 
 body{
-    background-color: rgb(26, 24, 24);
+    background-color: #090b0c;
     position: relative;
 }
 
@@ -31,9 +32,12 @@ nav h2{
     cursor: pointer;
     letter-spacing: 5px;
 }
+a{
+    list-style: none;
+    text-decoration: none;
+}
 
 span{
-    color: var(--cor-letra-detaque);
     color: var(--cor-verde);
 }
 
@@ -164,33 +168,18 @@ h3{
     background-color: rgba(95, 93, 93, 0.918);
     
 }
-/* #tudosobremim{
-    position: absolute;
-    width: 50%;
-} */
 
-#tituloSobremim{
-    position:absolute;
-    left: 10%;
-    top: 10px;
-    
-}
+
 #sobremim{
     font-size: 20px;
     font-weight: bolder;
     background-color: rgb(228, 225, 225);
-    /* position: relative;
-    left: 10%; */
     width: 55%;
-    height: 55%;
+    height: auto;
     padding: 15px;
-    border-radius: 5%;
+    border-radius: 15px;
 }
-#programadorfoto{
-    float: right;
-    width: 20%;
-    height: 20%;
-}
+
 
 #projeto{
     background-color:rgba(38, 38, 201, 0.158)
