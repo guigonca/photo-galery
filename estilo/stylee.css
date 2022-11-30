@@ -182,8 +182,65 @@ h3{
 
 
 #projeto{
-    background-color:rgba(38, 38, 201, 0.158)
+    background-color:#ffffff
 }
+
+.container-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card-card1{
+    background-color:rgb(228, 225, 225);
+    width: 300px;
+    height: 460px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    margin: 25px;
+    overflow: hidden;
+}
+.card-header{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.card-img{
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+}
+.card-body{
+    height: 170px;
+    padding: 15px;
+    text-align: center;
+}
+.card-titulo{
+    font-size: 40px;
+    padding: 15px;
+}
+.card-texto{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 250px;
+}
+
+.footer{
+    background-color: #090b0c;
+    text-align: center;
+    margin-top: 15px;
+}
+.footer a{
+    background-color: var(--cor-verde);
+    color: white;
+    display: block;
+    padding: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
 
 #contato{
     background-color: #f9004d;
@@ -205,6 +262,11 @@ h3{
 
 .meunome{
    visibility: hidden;
+}
+
+.card-card1:hover{
+    transform: scale3d(1.1, 1.1, 1);
+    transition: 0.5s;
 }
 
 
